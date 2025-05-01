@@ -1134,14 +1134,14 @@
    <soapenv:Body>\r
       <web:ListOfLanguagesByName/>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfLanguagesByNameRequest"/></con:call></con:operation></con:interface><con:testSuite id="29b1d88d-eb08-4ba8-826c-7f6c442e0b05" name="Country Info SOAP Requests TestSuite1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="faefd9a8-7aad-4e41-95b9-63c3014cce22" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CapitalCity TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="1719b750-2065-42f7-a4e5-3a6cdad1b45f" name="CapitalCity_ProjectLevel"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding</con:interface><con:operation>CapitalCity</con:operation><con:request name="CapitalCity_ProjectLevel" id="62123ba6-1415-4968-8b78-422abddc459d"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfLanguagesByNameRequest"/></con:call></con:operation></con:interface><con:testSuite id="29b1d88d-eb08-4ba8-826c-7f6c442e0b05" name="Country Info SOAP Requests TestSuite1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="faefd9a8-7aad-4e41-95b9-63c3014cce22" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Capital City TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="1719b750-2065-42f7-a4e5-3a6cdad1b45f" name="CapitalCity_ProjectLevel"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding</con:interface><con:operation>CapitalCity</con:operation><con:request name="CapitalCity_ProjectLevel" id="62123ba6-1415-4968-8b78-422abddc459d"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <web:CapitalCity>\r
          <web:sCountryISOCode>${#Project#countryISOCodeProjectLevel}</web:sCountryISOCode>\r
       </web:CapitalCity>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="390ce7c3-e2fc-430c-8c1d-924d1d7f93a1" name="Contains"><con:configuration><token>New Delhi</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="aff69bc4-7575-46d1-9d7b-784eb7150571" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple NotContains" id="fcfc4ecf-cf24-4600-b41b-3077327ab862" name="Not Contains"><con:configuration><token>New York</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="b063de42-3378-4069-ab36-a66f50edcb9f" name="Response SLA"><con:configuration><SLA>1000</SLA></con:configuration></con:assertion><con:assertion type="Invalid HTTP Status Codes" id="7a510eaf-796f-4cd3-92c3-c2cc9e6d1278" name="Invalid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:assertion type="SOAP Fault Assertion" id="dfe96c17-9d93-4dcc-8144-b8235326a9f8" name="Not SOAP Fault"/><con:assertion type="SOAP Response" id="8facc8fd-4507-47a2-b772-0733c9178853" name="SOAP Response"/><con:assertion type="GroovyScriptAssertion" id="90b3fd99-13ae-46cf-a435-5a8deaab66a5" name="Script Assertion"><con:configuration/></con:assertion><con:assertion type="XPath Match" id="b3aecad5-5e60-47a2-b884-c046ed41a2b7" name="XPath Match"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="390ce7c3-e2fc-430c-8c1d-924d1d7f93a1" name="Contains"><con:configuration><token>New Delhi</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="aff69bc4-7575-46d1-9d7b-784eb7150571" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple NotContains" id="fcfc4ecf-cf24-4600-b41b-3077327ab862" name="Not Contains"><con:configuration><token>New York</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="b063de42-3378-4069-ab36-a66f50edcb9f" name="Response SLA"><con:configuration><SLA>500</SLA></con:configuration></con:assertion><con:assertion type="Invalid HTTP Status Codes" id="7a510eaf-796f-4cd3-92c3-c2cc9e6d1278" name="Invalid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:assertion type="SOAP Fault Assertion" id="dfe96c17-9d93-4dcc-8144-b8235326a9f8" name="Not SOAP Fault"/><con:assertion type="SOAP Response" id="8facc8fd-4507-47a2-b772-0733c9178853" name="SOAP Response"/><con:assertion type="GroovyScriptAssertion" id="90b3fd99-13ae-46cf-a435-5a8deaab66a5" name="Script Assertion"><con:configuration/></con:assertion><con:assertion type="XPath Match" id="b3aecad5-5e60-47a2-b884-c046ed41a2b7" name="XPath Match"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
 declare namespace m='http://www.oorsprong.org/websamples.countryinfo';
 //*:CapitalCityResult</path><content>*ew Delhi</content><allowWildcards>true</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XQuery Match" id="3cc47610-2f45-49a0-bf83-576ed3a7a49f" name="XQuery Match"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
 declare namespace m='http://www.oorsprong.org/websamples.countryinfo';
@@ -1217,7 +1217,7 @@ testRunner.testCase.properties.each
       </web:CapitalCity>\r
    </soapenv:Body>\r
 </soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="390ce7c3-e2fc-430c-8c1d-924d1d7f93a1" name="Contains"><con:configuration><token>New Delhi</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CapitalCityRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:setupScript>log.info("KC")</con:setupScript><con:tearDownScript>log.info(context.expand('${#TestCase#testCaseName}') + " is finished executing");
-</con:tearDownScript><con:properties><con:property><con:name>testcaseProperty</con:name><con:value>I am Test Case property</con:value></con:property><con:property><con:name>countryISOCodeTestCaseLevel</con:name><con:value>IN</con:value></con:property><con:property><con:name>testCaseLevelVariable</con:name><con:value>Am</con:value></con:property><con:property><con:name>countryNameTestCaseLevel</con:name></con:property><con:property><con:name>countryNameTestCaseLevel</con:name></con:property><con:property><con:name>testCaseName</con:name><con:value>CapitalCity TestCase</con:value></con:property><con:property><con:name>countryNameTestCaseLevel</con:name></con:property><con:property><con:name>countryNameTestCaseLevel</con:name></con:property></con:properties></con:testCase><con:testCase id="96685bcc-79dd-47a4-981a-d5b2d3b4d230" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CountriesUsingCurrency TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="4494e099-9cd2-4dbe-8d7e-f119d6e51aac" name="CountriesUsingCurrency"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding</con:interface><con:operation>CountriesUsingCurrency</con:operation><con:request name="CountriesUsingCurrency" id="b3a29a7a-5ca7-4f19-904f-70c67f2028c2"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+</con:tearDownScript><con:properties><con:property><con:name>testcaseProperty</con:name><con:value>I am Test Case property</con:value></con:property><con:property><con:name>countryISOCodeTestCaseLevel</con:name><con:value>IN</con:value></con:property><con:property><con:name>testCaseLevelVariable</con:name><con:value>Am</con:value></con:property><con:property><con:name>countryNameTestCaseLevel</con:name></con:property><con:property><con:name>countryNameTestCaseLevel</con:name></con:property><con:property><con:name>countryNameTestCaseLevel</con:name></con:property><con:property><con:name>testCaseName</con:name><con:value>CapitalCity TestCase</con:value></con:property><con:property><con:name>countryNameTestCaseLevel</con:name></con:property></con:properties></con:testCase><con:testCase id="96685bcc-79dd-47a4-981a-d5b2d3b4d230" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CountriesUsingCurrency TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="4494e099-9cd2-4dbe-8d7e-f119d6e51aac" name="CountriesUsingCurrency"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding</con:interface><con:operation>CountriesUsingCurrency</con:operation><con:request name="CountriesUsingCurrency" id="b3a29a7a-5ca7-4f19-904f-70c67f2028c2"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <web:CountriesUsingCurrency>\r
@@ -1307,7 +1307,25 @@ testRunner.testCase.properties.each
    <soapenv:Body>\r
       <web:ListOfCountryNamesByCode/>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfCountryNamesByCodeRequest" mustUnderstand="NONE" version="200508"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="4b5db144-1f31-4218-8e06-8b1be59e9af9" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ListOfCountryNamesByName TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="e044274c-108a-40fd-b7e5-1b5953d64249" name="ListOfCountryNamesByName"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding</con:interface><con:operation>ListOfCountryNamesByName</con:operation><con:request name="ListOfCountryNamesByName" id="ddded1fd-bd39-4439-acc1-3e164e44d7bd"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfCountryNamesByCodeRequest" mustUnderstand="NONE" version="200508"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="8a5a3d05-d77c-4d65-a9dd-7549438d67ef" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Transfer Property Using Groovy Script" searchProperties="true"><con:settings/><con:testStep type="request" id="2f784bfb-77ed-4130-b553-46132783f81c" name="GetCountryISOCode"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding</con:interface><con:operation>CountryISOCode</con:operation><con:request name="GetCountryISOCode" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="229a72cf-f757-4198-8e9f-3e240657bd89"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:CountryISOCode>\r
+         <web:sCountryName>India</web:sCountryName>\r
+      </web:CountryISOCode>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="f87e75ed-1c05-4e37-8e86-602e95bcb4b7" name="SOAP Response"/><con:assertion type="Simple Contains" id="9a29bbd8-8e9a-48a3-8594-bac72a3ba4e0" name="Contains"><con:configuration><token>IN</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CountryISOCodeRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script ISO Code Transfer" id="b0c5edf2-9fad-4d27-84d5-ab0496eda99e"><con:settings/><con:config><script>def response = testRunner.testCase.getTestStepByName('GetCountryISOCode').getPropertyValue("response");
+def responseValue = new XmlSlurper().parseText(response).text();
+log.info(responseValue);
+
+testRunner.testCase.getTestStepByName("Properties").setPropertyValue("countryISOCodeGroovy", responseValue);</script></con:config></con:testStep><con:testStep type="properties" name="Properties" id="6004cc54-07c7-4ffa-9020-f82395cd2577"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>countryISOCodeGroovy</con:name><con:value>IN</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" id="bd17f3df-3068-416f-b4cf-74f5658e3610" name="GetCapitalCity"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding</con:interface><con:operation>CapitalCity</con:operation><con:request name="GetCapitalCity" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="2c21b293-c336-4d33-87a4-1074e21df872"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:CapitalCity>\r
+         <web:sCountryISOCode>${Properties#countryISOCodeGroovy}</web:sCountryISOCode>\r
+      </web:CapitalCity>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="43a47337-52bd-41e2-8bb8-45356eeae187" name="SOAP Response"/><con:assertion type="Simple Contains" id="09ad210a-3f89-478b-8ac4-f0feaac8ca5b" name="Contains"><con:configuration><token>New Delhi</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CapitalCityRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="4b5db144-1f31-4218-8e06-8b1be59e9af9" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ListOfCountryNamesByName TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="e044274c-108a-40fd-b7e5-1b5953d64249" name="ListOfCountryNamesByName"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding</con:interface><con:operation>ListOfCountryNamesByName</con:operation><con:request name="ListOfCountryNamesByName" id="ddded1fd-bd39-4439-acc1-3e164e44d7bd"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <web:ListOfCountryNamesByName/>\r
@@ -1355,25 +1373,9 @@ declare namespace ns1='http://www.oorsprong.org/websamples.countryinfo';
          <web:sCountryISOCode>IN</web:sCountryISOCode>
       </web:CapitalCity>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="e7fbc25e-0579-4ecf-a90b-8c57b40ac7ad" name="Contains"><con:configuration><token>New Delhi</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CapitalCityRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="8a5a3d05-d77c-4d65-a9dd-7549438d67ef" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Transfer Property Using Groovy Script" searchProperties="true"><con:settings/><con:testStep type="request" id="2f784bfb-77ed-4130-b553-46132783f81c" name="GetCountryISOCode"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding</con:interface><con:operation>CountryISOCode</con:operation><con:request name="GetCountryISOCode" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="229a72cf-f757-4198-8e9f-3e240657bd89"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <web:CountryISOCode>\r
-         <web:sCountryName>India</web:sCountryName>\r
-      </web:CountryISOCode>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="f87e75ed-1c05-4e37-8e86-602e95bcb4b7" name="SOAP Response"/><con:assertion type="Simple Contains" id="9a29bbd8-8e9a-48a3-8594-bac72a3ba4e0" name="Contains"><con:configuration><token>IN</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CountryISOCodeRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script ISO Code Transfer" id="b0c5edf2-9fad-4d27-84d5-ab0496eda99e"><con:settings/><con:config><script>def response = testRunner.testCase.getTestStepByName('GetCountryISOCode').getPropertyValue("response");
-def responseValue = new XmlSlurper().parseText(response).text();
-log.info(responseValue);
-
-testRunner.testCase.getTestStepByName("Properties").setPropertyValue("countryISOCodeGroovy", responseValue);</script></con:config></con:testStep><con:testStep type="properties" name="Properties" id="6004cc54-07c7-4ffa-9020-f82395cd2577"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>countryISOCodeGroovy</con:name><con:value>IN</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" id="bd17f3df-3068-416f-b4cf-74f5658e3610" name="GetCapitalCity"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding</con:interface><con:operation>CapitalCity</con:operation><con:request name="GetCapitalCity" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="2c21b293-c336-4d33-87a4-1074e21df872"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <web:CapitalCity>\r
-         <web:sCountryISOCode>${Properties#countryISOCodeGroovy}</web:sCountryISOCode>\r
-      </web:CapitalCity>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="43a47337-52bd-41e2-8bb8-45356eeae187" name="SOAP Response"/><con:assertion type="Simple Contains" id="09ad210a-3f89-478b-8ac4-f0feaac8ca5b" name="Contains"><con:configuration><token>New Delhi</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CapitalCityRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="ef7c6094-5dfc-4f0b-9e4a-79a860834d9a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Groovy Practice" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Practice Script" id="060a03d4-542a-4660-b321-4963c27bb261"><con:settings/><con:config><script>class Hello
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="e7fbc25e-0579-4ecf-a90b-8c57b40ac7ad" name="Contains"><con:configuration><token>New Delhi</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CapitalCityRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:tearDownScript>// Code to execute the GenerateCSVReport test step
+testRunner.testCase.testSuite.project.testSuites["Library"].testCases["Reporting_Utility"].
+testSteps["GenerateCSVReport"].run(testRunner, context);</con:tearDownScript><con:properties/></con:testCase><con:testCase id="ef7c6094-5dfc-4f0b-9e4a-79a860834d9a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Groovy Practice" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Practice Script" id="060a03d4-542a-4660-b321-4963c27bb261"><con:settings/><con:config><script>class Hello
 {
 	def log;
 	def context;
@@ -1439,7 +1441,29 @@ testRunner.testCase.testSuite.testCases["Setup and TearDown Script Using Groovy"
 testRunner.testCase.testSuite.testCases["Setup and TearDown Script Using Groovy"].setTearDownScript('log.info("TearDown script is set by Groovy Script")');
 testRunner.testCase.testSuite.project.workspace.projects["ReqRes REST Project"].testSuites["ReqRes TestSuit1"].setSetupScript('log.info("Setup script is set by Groovy Script")');
 testRunner.testCase.testSuite.project.workspace.projects["ReqRes REST Project"].testSuites["ReqRes TestSuit1"].setTearDownScript('log.info("TearDown script is set by Groovy Script")');
-</script></con:config></con:testStep><con:setupScript>log.info("Setup script is set by Groovy Script")</con:setupScript><con:tearDownScript>log.info("TearDown script is set by Groovy Script")</con:tearDownScript><con:properties/></con:testCase><con:properties><con:property><con:name>testsuiteProperty</con:name><con:value>I am Test Suit property</con:value></con:property><con:property><con:name>countryISOCodeTestSuitLevel</con:name><con:value>IN</con:value></con:property><con:property><con:name>testSuitLevelVariable</con:name><con:value>I</con:value></con:property><con:property><con:name>testSuiteName</con:name><con:value>Country Info SOAP Requests TestSuite1</con:value></con:property><con:property><con:name>countryNameTestSuiteLevel</con:name></con:property></con:properties><con:setupScript>log.info(context.expand('${#TestSuite#testSuiteName}') + " is started to execute");
+</script></con:config></con:testStep><con:setupScript>log.info("Setup script is set by Groovy Script")</con:setupScript><con:tearDownScript>log.info("TearDown script is set by Groovy Script")</con:tearDownScript><con:properties/></con:testCase><con:testCase id="1ade8f58-87bd-487a-8dfa-ae5bf3e23106" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Verify Response Content Using Groovy and Message Exchange Object" searchProperties="true"><con:settings/><con:testStep type="request" id="d2c3d789-61c1-48bb-b54d-477593c95577" name="CapitalCity - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding</con:interface><con:operation>CapitalCity</con:operation><con:request name="CapitalCity - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="0d2d6a89-8dbb-4cd0-acc6-5a358a453dc0"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:CapitalCity>\r
+         <web:sCountryISOCode>IN</web:sCountryISOCode>\r
+      </web:CapitalCity>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="a07dbc46-34cf-4843-a195-7651f4f4fe3f" name="SOAP Response"/><con:assertion type="GroovyScriptAssertion" id="744f40c7-88ff-4fbb-8790-3dc52bf61943" name="Script Assertion"><con:configuration><scriptText>def responseTimeTaken = messageExchange.getTimeTaken();
+assert responseTimeTaken &lt; 200
+
+def responseHeaderContentType = messageExchange.responseHeaders["Content-Type"];
+assert responseHeaderContentType.contains("text/xml; charset=utf-8");
+
+def responseAttachment = messageExchange.responseAttachments.length;
+assert responseAttachment == 0;
+
+//def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+//def responseHolder = groovyUtils.getXmlHolder(messageExchange.responseContent);
+//def result = responseHolder.getNodeValue("//m:CapitalCityResult");
+//assert result == "New Delhi";
+
+def res = new XmlSlurper().parseText(messageExchange.responseContent);
+assert res.text() == "New Delhi";</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CapitalCityRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>testsuiteProperty</con:name><con:value>I am Test Suit property</con:value></con:property><con:property><con:name>countryISOCodeTestSuitLevel</con:name><con:value>IN</con:value></con:property><con:property><con:name>testSuitLevelVariable</con:name><con:value>I</con:value></con:property><con:property><con:name>testSuiteName</con:name><con:value>Country Info SOAP Requests TestSuite1</con:value></con:property><con:property><con:name>countryNameTestSuiteLevel</con:name></con:property></con:properties><con:setupScript>log.info(context.expand('${#TestSuite#testSuiteName}') + " is started to execute");
 </con:setupScript><con:tearDownScript>log.info(context.expand('${#TestSuite#testSuiteName}') + " is finished executing");
 </con:tearDownScript></con:testSuite><con:testSuite id="2c1b0299-d5c5-4626-b9c1-60707b57841c" name="Country Info SOAP Requests TestSuite2"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="ca45479b-fc43-4d02-a3ac-670fd5437d0a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CountryInfoServiceSoapBinding TestSuite" searchProperties="true"><con:settings/><con:testStep type="request" id="a6a9f3c4-c07d-430f-9de8-75d5dce5c4e3" name="CapitalCity"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding</con:interface><con:operation>CapitalCity</con:operation><con:request name="CapitalCity" id="621a01ff-2eab-4e5f-80f0-966b58d26e54"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
    <soapenv:Header/>\r
@@ -1579,4 +1603,126 @@ ts.run(null,false);</script></con:config></con:testStep><con:properties/></con:t
 def status = pro.run(null,false).getStatus().toString();
 log.info("Status: " + status);</script></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>testSuiteName</con:name><con:value>Country Info SOAP Requests TestSuite2</con:value></con:property></con:properties><con:setupScript>log.info(context.expand('${#TestSuite#testSuiteName}') + " is started to execute");
 </con:setupScript><con:tearDownScript>log.info(context.expand('${#TestSuite#testSuiteName}') + " is finished executing");
-</con:tearDownScript></con:testSuite><con:properties><con:property><con:name>countryISOCodeProjectLevel</con:name><con:value>IN</con:value></con:property><con:property><con:name>projectLevelVariable</con:name><con:value>Brave</con:value></con:property><con:property><con:name>projectName</con:name><con:value>Country Info SOAP Project</con:value></con:property><con:property><con:name>countryNameProjectLevel</con:name></con:property><con:property><con:name>countryNameProjectLevel</con:name></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:beforeRunScript>log.info(context.expand('${#Project#projectName}') + " is started to execute");</con:beforeRunScript><con:afterRunScript>log.info(context.expand('${#Project#projectName}') + " is finished executing");</con:afterRunScript><con:sensitiveInformation/></con:soapui-project>
+</con:tearDownScript></con:testSuite><con:testSuite id="2b61f26d-bcf8-487b-99fe-b981c9fb6849" name="Library" disabled="true"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="1926b8b5-e59c-4ee3-8710-81fbe6688d07" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Reporting_Utility" searchProperties="true"><con:settings/><con:testStep type="groovy" name="GenerateCSVReport" id="e46324d2-11bf-4874-a01f-e89a3313a129"><con:settings/><con:config><script>// Try-catch block to handle exceptions
+try {
+
+// 1. Create a "SoapUIResults" folder in the project path 
+      // Retrieve the project root folder
+      def projectPath = new com.eviware.soapui.support.GroovyUtils(context).projectPath
+
+      // Specify a folder inside project root to store the results
+      String folderPath = projectPath + "/SoapUIResults";
+
+      // Create a File object for the specified path
+      def resultFolder = new File(folderPath);
+
+      // Check for existence of folder and create a folder
+      if(!resultFolder.exists())
+      {
+        resultFolder.mkdirs();
+      }
+
+/* ------------------------------------------------------------------------------- */
+
+// 2. Create a subfolder (with timestamp) to store the request-response local copy 
+      // Retrieve the latest execution date-time
+      Date d = new Date();
+      def executionDate = d.format("dd-MMM-yyyy HH_mm");
+
+      // Specify the subfolder path with name Request-Response_CurrentTimeStamp
+      String subfolderPath1 = folderPath+ "/Request-Response_"+executionDate;
+
+      // Create this sub-folder
+      new File(subfolderPath1).mkdirs();
+
+/* ------------------------------------------------------------------------------- */
+
+// 3. Create another subfolder "CSV Reports" to store the reports file 
+      // Specify the subfolder path with name CSV Reports
+      String subfolderPath2 = folderPath+ "/CSV Reports";
+
+      // Create this sub-folder
+      new File(subfolderPath2).mkdirs();
+
+/* ------------------------------------------------------------------------------- */
+
+// 4. Create a Report.csv file inside the CSV Reports folder 
+      // Create a File object for Report csv file (with timestamp)
+      def reportFile = new File(subfolderPath2, "Report_"+executionDate+".csv");
+
+      // Check for existence of report file and create a file
+      if(!reportFile.exists())
+      {
+        reportFile.createNewFile();
+        // Create required column names in the report file
+        reportFile.write('"Test Suite","Test Case","Test Step","Step Type","Step Status",'
+                        +'"Result message","Execution Date"');
+      }
+/* ------------------------------------------------------------------------------- */
+// 5. Inserting data in the file
+      // Iterate over all the test steps results
+  for(stepResult in testRunner.getResults())
+  {
+    // Retrieve Test Suite name
+   def testSuite = testRunner.testCase.testSuite.name;
+   // Retrieve Test Case name
+   def testCase = testRunner.testCase.name;
+   // Retrieve Test Step
+   def testStep = stepResult.getTestStep();
+   // Retrieve Test Step name
+   def testStepName = testStep.name
+   // Retrieve Test Step type
+   def type = testStep.config.type
+   // Retrieve Test Step status
+   def status = stepResult.getStatus()
+
+   // Creating new line in report file
+   reportFile.append('\n');
+
+   // Write all the necessary information in the file
+   reportFile.append('"' + testSuite + '",');
+   reportFile.append('"' + testCase + '",');
+   reportFile.append('"' + testStepName + '",');
+   reportFile.append('"' + type + '",');
+   reportFile.append('"' + status + '",');
+
+   // Retrieve the test result messages
+   reportFile.append('"');
+   for(resMessage in stepResult.getMessages())
+   {
+     // Write messages and separate multiple messages by new line
+     reportFile.append('Message:' + resMessage + '\n');
+   }
+   reportFile.append('",');
+
+   //Write executionDate in the file
+   reportFile.append('"' + executionDate + '",');
+/* ------------------------------------------------------------------------------- */
+// 6. Extract the request and response and save it to external file
+      // Verify if the test step type is request: SOAP project or restrequest: REST project
+        if((type=="request").or(type=="restrequest"))
+        {
+          // Extract the request from the test step
+          def extRequest = testStep.properties["Request"].value;    
+
+      // Create a file in the reports folder and write the request
+      // Naming convention: request_TestSuiteName_TestCaseName_TestStepName.txt
+      def requestFile=subfolderPath1+"/request_"+testSuite+"_"+testCase+"_"+testStepName+".txt";
+      def rqfile = new File(requestFile);
+      rqfile.write(extRequest, "UTF-8");
+
+      // Extract the response from the test step
+      def extResponse = stepResult.getResponseContent();    
+
+      // Create a file in the reports folder and write the response
+      // Naming convention: response_TestSuiteName_TestCaseName_TestStepName.txt
+      def responseFile=subfolderPath1+"/response_"+testSuite+"_"+testCase+"_"+testStepName+".txt";
+      def rsfile = new File(responseFile);
+      rsfile.write(extResponse, "UTF-8");
+     }
+   }
+ }
+catch(exc)
+{
+   log.error("Exception happened: " + exc.toString());
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>countryISOCodeProjectLevel</con:name><con:value>IN</con:value></con:property><con:property><con:name>projectLevelVariable</con:name><con:value>Brave</con:value></con:property><con:property><con:name>countryNameProjectLevel</con:name></con:property><con:property><con:name>projectName</con:name><con:value>Country Info SOAP Project</con:value></con:property><con:property><con:name>countryNameProjectLevel</con:name></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:beforeRunScript>log.info(context.expand('${#Project#projectName}') + " is started to execute");</con:beforeRunScript><con:afterRunScript>log.info(context.expand('${#Project#projectName}') + " is finished executing");</con:afterRunScript><con:sensitiveInformation/></con:soapui-project>
